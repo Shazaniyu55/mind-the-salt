@@ -29,7 +29,7 @@ const MyApp: React.FC<AppProps> = ({ Component,pageProps:  { session, ...pagePro
   const pathName=usePathname()
   const appRoutes=[
     "/admin",
-    "/blogReader",
+    "/Education",
     "/community",
     "/community-go-to-expand",
     "/community-question-expand",

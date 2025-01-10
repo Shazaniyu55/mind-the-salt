@@ -84,11 +84,11 @@ const SideNav:React.FC<Props>=({setShow})=>{
                 }
             },
             {
-                isActive:pathName?.includes('/learn')  || pathName?.includes('/blogReader'),
+                isActive:pathName?.includes('/Education')  || pathName?.includes('/Education'),
                 name:"Education",
                 icon:<BookOpen size={20}/>,
                 onClick:function(){
-                    route.push("/learn")
+                    route.push("/Education/Salt101")
                     markAsSelected(this)
                 }
             }
