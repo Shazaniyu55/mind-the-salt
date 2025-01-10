@@ -1,0 +1,62 @@
+.headerProfile{
+    padding:2px;
+}
+.communityQuestion{
+    width:100%;
+    margin-top:10px;
+    padding: 1px;
+    border:1px solid rgb(247, 233, 233);
+    border-radius: 10px;;
+}
+.UpvoteDownVote{
+    padding:6px;
+    border-radius: 30px;
+    background: var(--our-grey);
+}
+.upvote-downvote{
+    border-left:2px solid var(--our-grey);
+    padding:10px;
+}
+
+.hideComment{
+    display: none !important;
+}
+
+.showComment{
+    display:block !important;
+}
+div.showCommentAnimation,div.hideCommentAnimation{
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+div.showCommentAnimation{
+    animation-name: showComment;
+}
+
+div.hideCommentAnimation{
+    animation-name: hideComment !important;
+    animation-duration: 2s !important;
+
+}
+
+
+@keyframes showComment{
+0%{
+opacity:0;
+}
+100%{
+  opacity: 1;  
+}
+
+}
+
+
+@keyframes hideComment{
+    100%{
+    opacity:1;
+    }
+    0%{
+      opacity: 0;  
+    }
+    
+    }

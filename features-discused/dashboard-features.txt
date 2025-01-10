@@ -1,0 +1,13 @@
+- Dashboard Features
+! show box of the following 
+- 1 risk assessment scrore
+- 2 quize score 
+- 3 games 
+- 4 learn
+! show active questions and answers from community
+- component of prev active questions onclick take the person to the main community page viewing the question and interacractions
+! talk with our professionals
+- redirect to whatsapp group or chat
+! Dashboard other side components
+- weekly activites charts
+-  weekly activities list for 

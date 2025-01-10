@@ -1,0 +1,129 @@
+.appBody{
+    width:100vw;
+    height: 100vh;
+    background:rgb(252, 252, 253);
+    display: flex;
+    
+}
+.rightSideContainer{
+    min-width:20%;
+    /* border-radius: 10px; */
+    height: 100vh;
+
+}
+
+.body{
+    width:50%;
+    min-height: 100%;
+}
+.leftSideContainer{
+   width:30%;
+   min-height: 100%; 
+
+}
+.leftSideContainer .sideNavContainer{
+   background:rgb(252, 252, 253);
+    
+}
+@media (max-width:1024px) {
+    .rightSideContainer{
+    width:30%;
+     
+        
+    }
+    
+.body{
+    width:80%;
+}
+    .leftSideContainer{
+    display: none;
+    
+    }
+    
+    }
+@media (max-width:700px) {
+    
+    .rightSideContainer{
+         display: none;
+            
+        }
+        
+    .body{
+        width:100%;
+    }
+}
+
+.nav{
+    width:100%;
+} 
+
+.navSearch{
+    padding:5px;
+    width:80%;
+    height: 40px;
+    border-radius: 10px;
+    background:white;
+}
+.navSearch:hover{
+    box-shadow:0px 0px 30px 0px rgb(243, 242, 242);
+}
+.navSearch input{
+    outline: none !important;
+
+}
+.mobileNavSideContainer{
+    background:rgba(0, 0, 0, 0.068);
+    width:100%;
+    height:100%;
+position:fixed;
+z-index:999;
+top:0;
+left:0;
+}
+.mobileNavSide{
+width:60%;
+height: 100vh;
+background: white;
+box-shadow:0px 0px 30px 0px rgb(224, 220, 220);
+max-width:300px;
+animation-duration: 1s;
+}
+.mobileNavSide.open{
+    animation-name: open;
+}
+
+.mobileNavSide.close{
+    animation-name: close;
+}
+
+@keyframes close{
+    0%{
+transform: translate(0px,0px);
+    }
+    100%{
+transform: translate(-150vw,0px);
+        
+    }
+}
+
+@keyframes open {
+    0%{
+transform: translate(-150vw,0px);
+
+    }
+    100%{
+transform: translate(0px,0px);
+        
+    }
+}
+
+
+.loader{
+    width:100%;
+    height: 100%;
+    z-index:999;
+    background: white;
+    top:0;
+    left:0;
+}
+

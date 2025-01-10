@@ -1,0 +1,10 @@
+@media (max-width:700px) {
+    /* mobile settings */
+ .offcanvas:not(.notificationBackDrop+.offcanvas){
+    max-width: 70vw !important;
+ } 
+}
+
+/*
+TQ1JXB8RLBC4AH8X6AY5E2K1
+*/

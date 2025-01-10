@@ -1,0 +1,35 @@
+.introCard{
+    width:100%;
+    background:linear-gradient(30deg,var(--red-d-1),var(--our-blue));
+    height:160px;
+    border-radius: 16px;
+}
+
+.card.quizCard:hover{
+    box-shadow:1px 1px 10px 0px lightgray;
+    cursor:pointer;
+    border:1px solid rgb(216, 214, 224) !important;
+}
+
+.game{
+    box-shadow:1px 1px 10px 0px lightgrey;
+}
+.quiz-option{
+    animation-name:fadeUp;
+    background:white;
+   
+}
+
+.score{
+    width:100%;
+    height: 100%;
+}
+
+.scoreCircle{
+    border-radius: 50%;
+    border:10px solid rgb(240, 241, 247);
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+}

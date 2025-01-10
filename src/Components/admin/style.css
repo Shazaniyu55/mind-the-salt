@@ -1,0 +1,66 @@
+.addEditAssesments input,.addEditAssesments textarea{
+outline:none;
+border:1px solid var(--our-grey);
+border-radius:10px;
+padding:10px;
+width:100%;
+    }
+
+    .addEditAssesments > div{
+        width:50%;
+        
+    }
+
+    .addEditAssesments textarea{
+font-weight: bolder;
+color:var(--our-blue);
+font-size:larger;
+border:3px solid var(--our-grey)
+
+    }
+
+    .questionListContainer{
+        padding:10px;
+    }
+    .questionListContainer .question{
+        padding:10px;
+    width:95%;
+    margin:0 auto;
+    margin-top:10px;
+display:flex !important;
+cursor:pointer;
+border-radius: 5px;
+box-shadow:1px 1px 10px 0px lightgrey;
+align-items: center;
+    }
+
+    .questionListContainer .question.active{
+border:3px solid rgb(173, 188, 230);
+    }
+
+
+    .createBlog{
+        width:100%;
+    }
+
+   
+  .ui_{
+    width:30%;
+    gap:10px;
+    border-radius:10px;
+  }
+
+  .adminBoxContainer{
+    width:100%;
+    gap:10px;
+
+  }
+
+  .adminBoxContainer > div{
+    width:48%;
+    border-radius:10px;
+    border:2px solid rgb(221, 231, 235);
+    background:white;
+    box-shadow:1px 1px 10px 0px rgb(245, 240, 240);
+    padding:10px;
+  }

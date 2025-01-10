@@ -1,0 +1,23 @@
+.loginContainer{
+    width:100vw;
+    min-height: 100vh;
+   background-color: var(--colorBlueDark);
+   background-size:100% 100%;
+   background-image:url('/images/heart_pump2.gif')
+}
+.loginContainer .Wrapper{
+    width:100%;
+    min-height: 100vh;
+    background:rgba(5, 18, 36, 0.918);
+
+    height:100%;
+}
+.loginContainer .form{
+    box-shadow:1px 1px 10px 0px rgb(85, 81, 94);
+    border-radius: 20px;
+    background:rgba(255, 255, 255, 0.945);
+    min-height: 500px;
+    max-width: 400px;
+    width:95%;
+    padding:20px;
+}

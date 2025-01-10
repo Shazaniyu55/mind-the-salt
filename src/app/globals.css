@@ -1,0 +1,337 @@
+:root {
+    --red:rgb(219, 144, 5);
+    --red-d-1:rgb(141, 94, 6);
+    --red-d-2:rgb(58, 39, 4);
+    --red-opacity-02:rgba(93, 14, 65, 0.418);
+    --our-blue:#00224D;
+    --dark-blue:#00224D;
+    --our-white:#eef2f7;
+    --our-grey:#eff3f8;
+    --blue:#004aac;
+    --yellow:rgb(219, 144, 5);
+}
+button[class*=primary]{
+    background:var(--blue) !important;
+}
+@media (max-width:600px) {
+    *.m-none{
+        display: none !important;
+    }
+}
+
+@media (max-width:700px) {
+    *.m-block{
+        display: block!important;
+        
+    }
+    *.m-block > * {
+        width:100%;
+        min-width:100%;
+    }
+    
+}
+
+.logoAndText b{
+background:linear-gradient(90deg,var(--red),var(--dark-blue));
+background-clip: text;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+color:transparent;
+}
+
+.logoAndText:hover{
+    font-size:20 !important;
+    cursor:pointer !important;
+}
+
+
+.logoAndText:hover b{
+    font-size:20 !important;
+    cursor: pointer !important;;
+background:linear-gradient(90deg,var(--dark-blue),var(--red));
+background-clip: text;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+color:transparent;
+}
+
+.myContainer{
+    
+    width:100%;
+    background:white;
+    min-height:100px;
+    border-radius: 15px;
+    padding:10px;
+}
+
+html,body{
+    overflow: hidden !important;
+}
+
+.dashboardNavigation{
+    height:74px;
+    width: 100%;
+    background: white;
+}
+.circle{
+    width:25px;
+    height:25px;
+    border-radius: 15px;
+    color:white;
+    background:var(--our-blue);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-weight:bolder;
+}
+
+.quiz-option:hover{
+cursor: pointer;
+box-shadow:none;
+border:1px solid rgb(206, 207, 218);
+}
+
+ /* styles.css */
+ .editorClass .ql-container {
+    height: 200px; /* Set your desired height */
+  }
+  
+  .editorClass .ql-editor {
+    height:120px; /* Set your desired height for the editor area */
+  }
+
+  div[class*=cardHoverEffect]{
+box-shadow:1px 1px 10px 0px lightgray !important;
+border:1px solid rgb(236, 233, 240) !important;
+  }
+
+  .v-loader{
+    height:5px;
+    background:#f3edef ;
+    z-index:99999 !important;
+    width:100%;
+    display:none;
+    position: fixed;
+    top:0;
+    left:0;
+  }
+  .v-loader div{
+    height:5px;
+    width:100%;
+    animation-name:v-loader;
+    animation-iteration-count:infinite;
+    background:linear-gradient(30deg,var(--red),var(--our-blue));
+    animation-duration: 2s;
+  }
+
+  @keyframes v-loader {
+    0%{
+        width:40%;
+    }
+   
+    100%{
+        margin-left:100%;
+        width:80%;
+    }
+
+  }
+
+
+
+
+
+
+  .globalLoader{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:999999999;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    background:white;
+    /* color:rgb(250, 250, 252); */
+}
+
+
+.box-container{
+    box-shadow:1px 1px 10px 0px rgb(237, 237, 240);
+    background:white;
+    padding:10px;
+}
+
+
+.responsive-flex{
+    display:flex;
+    box-shadow:1px 1px 10px 0px rgb(237, 237, 240);
+    background:white;
+    padding:10px;
+}
+
+@media (max-width:900px) {
+.responsive-flex{
+    flex-flow:row wrap;
+ padding:16px;
+ border-radius: 20px;
+}
+.responsive-flex > * {
+    width:100%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+.Reader_body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    overflow-x: hidden;
+    /* Animated gradient background without green */
+    background: linear-gradient(135deg, #FFD662, #FFA500, #34568B);
+    background-size: 400% 400%;
+    animation: gradientBg 20s ease infinite;
+}
+
+@keyframes gradientBg {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+}
+
+
+
+@keyframes slideDown {
+    from {transform: translateY(-100%); opacity:0;}
+    to {transform: translateY(0); opacity:1;}
+}
+
+
+
+.Reader_body main {
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px 60px;
+    position:relative;
+    z-index:2;
+}
+
+.Reader_body h1 {
+    color:#34568B;
+    text-align:center;
+    margin-bottom:20px;
+    animation:fadeInDown 1.5s ease forwards;
+}
+
+@keyframes fadeInDown {
+    0% {opacity:0; transform:translateY(-20px);}
+    100% {opacity:1; transform:translateY(0);}
+}
+
+.Reader_body p {
+    font-size:20px;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.Reader_body section {
+    background:#FFF;
+    border-radius:10px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    padding:20px;
+    margin-bottom:40px;
+    opacity:0;
+    transform:translateY(20px);
+    animation:fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {opacity:1; transform:translateY(0);}
+}
+
+.Reader_body section:not(:first-of-type) {
+    animation-delay:0.5s;
+}
+
+.Reader_body section h2 {
+    color:#34568B;
+    margin-bottom:10px;
+    font-size:28px;
+    position:relative;
+}
+
+.Reader_body section h2::after {
+    content:"";
+    position:absolute;
+    width:50px;
+    height:4px;
+    background:#FFD662;
+    left:0;
+    bottom:-8px;
+    border-radius:2px;
+}
+
+.Reader_body ul {
+    padding-left:20px;
+    list-style-type:disc;
+}
+
+.Reader_body ul li {
+    margin-bottom:10px;
+    color:#333333;
+}
+
+.Reader_body a {
+    color:#FFD662;
+    text-decoration:none;
+    transition:color 0.3s ease;
+}
+
+.Reader_body a:hover {
+    text-decoration:underline;
+}
+
+
+/* Buttons if any future CTA needed */
+.Reader_body .btn {
+    display:inline-block;
+    background:#34568B;
+    color:#FFF;
+    padding:10px 20px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:background 0.3s, transform 0.3s;
+}
+
+.Reader_body .btn:hover {
+    background:#FFD662;
+    color:#333;
+    transform:scale(1.05);
+}
+
+@media(max-width:600px) {
+    .Reader_body  p {
+        font-size:18px;
+    }
+
+    .Reader_body section h2 {
+        font-size:24px;
+    }
+}
+
+
+.allStart{
+    text-align: start!important;
+}
+section h3{
+    color:var(--blue);
+    font-weight:bolder;
+}

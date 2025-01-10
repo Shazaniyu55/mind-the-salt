@@ -1,0 +1,3 @@
+
+have list of qize level.
+select game and play

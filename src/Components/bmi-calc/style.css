@@ -1,0 +1,27 @@
+.bmi-calc-container {
+    width: 400px;
+    max-width:90% ;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0px 20px 0px rgba(218, 214, 214, 0.952);
+    background: white;
+    text-align: center;
+  }
+  
+  .bmi-calc-container .MuiFormControl-root {
+    margin-bottom: 20px;
+  }
+  
+  .bmi-calc-container .MuiButton-root {
+    margin-top: 20px;
+  }
+  
+  .bmi-calc-container .MuiTypography-h5 {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .bmi-calc-container .MuiTypography-subtitle1 {
+    color: #666;
+  }
