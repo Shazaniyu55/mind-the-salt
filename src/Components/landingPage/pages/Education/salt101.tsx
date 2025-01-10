@@ -14,7 +14,7 @@ const Salt101: React.FC = () => {
   return (
     <>
       <div style={{ height: "100vh", overflow: "auto" }}>
-        <Navigation />
+        {/* <Navigation /> */}
         <br /><br /><br />
 
         <div style={{ padding: 20, maxWidth: 900, margin: "0 auto" }}>
