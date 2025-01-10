@@ -41,7 +41,7 @@ const Footer:React.FC=()=>{
             exclusive offers.
           </p>
           <form action="/api/message" method='post'>
-            <input type="text" placeholder="Your email" required/>
+            <input type="email" name='email' placeholder="Your email" required/>
             <button type="submit">SUBSCRIBE</button>
           </form>
           <div className="icons">
