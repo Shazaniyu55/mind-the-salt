@@ -1,7 +1,5 @@
 import nodemailer from 'nodemailer';
-import { config } from 'dotenv';
 
-config(); // Load environment variables from .env file
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
