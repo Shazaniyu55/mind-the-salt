@@ -25,8 +25,8 @@ break;
 case "/risk-assessment":
 setSideComponent(<AssessmentInstructions/>)
 break;
-case "/learn":
-case "/blogReader":
+case "/Education":
+case "/Education":
 setSideComponent(<SideBlogsLink/>)
 break;
 case "/quiz":
