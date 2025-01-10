@@ -2,7 +2,7 @@ import Bold from '@/utils/Bold';
 import { MDBBtn, MDBInput, MDBTextArea } from 'mdb-react-ui-kit';
 import Link from 'next/link';
 import React from 'react'
-import { Mail, Phone, Send } from 'react-feather';
+import { Mail, Play, Send, Phone } from 'react-feather';
 import SocialMediaIcons from './socials';
 import './footer.css'
 
@@ -21,26 +21,17 @@ const Footer:React.FC=()=>{
 <Link href="/Disclaimers/Ethics_Policy/">» ETHICS POLICY</Link>
           </ul>
         </div>
+        
 
-        <div className="footer-col">
+       <div className="footer-col">
           <h4>Explore</h4>
-          <ul className="links">
-            <li><a href="#">Free Designs</a></li>
-            <li><a href="#">Latest Designs</a></li>
-            <li><a href="#">Themes</a></li>
-            <li><a href="#">Popular Designs</a></li>
-            <li><a href="#">Art Skills</a></li>
-            <li><a href="#">New Uploads</a></li>
-          </ul>
-        </div>
+          <div className='d-flex align-content-center' style={{gap:10}}> <Mail  color='lightgrey'/> INFO@HEARTAFRICA.ORG</div>
+          <Link href="https://mind-the-salt-trivia.vercel.app/"><Play  color='lightgrey'/>Mind the salt Quiz</Link><br/>
+          <div className='d-flex align-content-center' style={{gap:10}}> <Phone  color='lightgrey'/> +2349074</div>
 
-        <div className="footer-col">
-          <h4>Game</h4>
-          <ul className="links">
-          <Link href="https://mind-the-salt-trivia.vercel.app/">Mind the salt Quiz</Link><br/>
+        </div> 
 
-          </ul>
-        </div>
+   
 
         <div className="footer-col">
           <h4>Newsletter</h4>
@@ -54,10 +45,8 @@ const Footer:React.FC=()=>{
             <button type="submit">SUBSCRIBE</button>
           </form>
           <div className="icons">
-            <i className="fa-brands fa-facebook-f"></i>
-            <i className="fa-brands fa-twitter"></i>
-            <i className="fa-brands fa-linkedin"></i>
-            <i className="fa-brands fa-github"></i>
+          <SocialMediaIcons/>
+
           </div>
         </div>
       </div>
