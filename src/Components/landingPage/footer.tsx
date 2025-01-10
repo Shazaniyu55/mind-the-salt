@@ -40,7 +40,7 @@ const Footer:React.FC=()=>{
             of news, updates, helpful tips, and
             exclusive offers.
           </p>
-          <form action="https://mind-the-salt-web.vercel.app/api/message" method='post'>
+          <form action="/api/message" method='post'>
             <input type="text" placeholder="Your email" required/>
             <button type="submit">SUBSCRIBE</button>
           </form>
