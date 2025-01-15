@@ -23,7 +23,7 @@ import QuizPresenter from './quizPresenter';
 const Main: React.FC = () => {
 const route=useRouter()
     return (
-        <div style={{ height: "100vh", overflow: "auto" }}>
+        <div style={{ height: "100vh", overflow: "auto", backgroundColor:"white" }}>
             <Presenter />
             <Navigation />
 
@@ -34,12 +34,12 @@ const route=useRouter()
                 initStyle={{marginBottom:40,transform:"translate(0px,20vh)"}}
                    >
 
-<div className="box-container" style={{maxWidth:1024,margin:"0 auto",borderRadius:30}}>
+<div className="box-container" style={{maxWidth:1024,margin:"0 auto",borderRadius:30,  backgroundColor:"#254B85"}}>
 
 
 <div style={{maxWidth:"600px",margin:"0 auto"}}><br />
-                        <b style={{ fontSize: 'larger',textAlign:"center",display:"block" }}>Why Mind the Salt Matters?</b><br /><br />
-                        <p style={{textAlign:"center"}}>Salt is a big part of our diets, but too much can harm your health. Many people don’t realise how much salt they eat every day. Here are some important facts about salt and health:
+                        <b style={{ fontSize: 'larger',textAlign:"center",display:"block", color:"white"}}>Why Mind the Salt Matters?</b><br /><br />
+                        <p style={{textAlign:"center", color:"white"}}>Salt is a big part of our diets, but too much can harm your health. Many people don’t realise how much salt they eat every day. Here are some important facts about salt and health:
 
 </p>
                     </div>
@@ -98,7 +98,7 @@ return <Box_ heading={e.title} key={i} text={e.fact} initStyle={initStyle}/>
                 />
             </div> */}
 <div className="aboutParent">
-            <FadeInShade    initStyle={{transform:"translate(0px,20vh)"}} style={{padding:16,margin:"0 auto",width:"90%",boxShadow:"1px 1px 10px 0px rgb(239, 238, 241)",borderRadius:30}}>
+            <FadeInShade    initStyle={{transform:"translate(0px,20vh)"}} style={{padding:16,margin:"0 auto",width:"90%",boxShadow:"1px 1px 10px 0px rgb(239, 238, 241)",borderRadius:30, backgroundColor:"#254B85", color:"white"}}>
            <br/><br/>
             <h2>Our Mission</h2>
       <p>
@@ -126,9 +126,12 @@ return <Box_ heading={e.title} key={i} text={e.fact} initStyle={initStyle}/>
                     boxShadow:"1px 1px 10px 0px rgb(239, 238, 241)",
                     width:"80%",
                     minWidth:300,
-                    padding:20
+                    padding:20,
+                    borderRadius:"10px 5px",
+                    backgroundColor:"#254B85",
+                    color:"white"
                 }}>
-                    <FadeInShade initStyle={{opacity:'0'}}><Bold style={{ fontSize: 30 }}>Take Our Heart Health Risk Assessment</Bold>
+                    <FadeInShade initStyle={{opacity:'0'}}><Bold style={{ fontSize: 30,color:"white"  }}>Take Our Heart Health Risk Assessment</Bold>
                     </FadeInShade> 
                     <p>
                         <br/>
@@ -170,14 +173,14 @@ return <Box_ heading={e.title} key={i} text={e.fact} initStyle={initStyle}/>
             <div className='text-center' style={{padding:16}}>
                <FadeInShade initStyle={{ opacity: 0,
   transform: "translateY(20px)",
-  transition: "opacity 1s ease-out, transform 1s ease-out"}}> <Bold style={{ fontSize: 25 }}>
+  transition: "opacity 1s ease-out, transform 1s ease-out", }}> <Bold style={{ fontSize: 25 }}>
                  What Mind the Salt Provides
                 </Bold></FadeInShade>
               
 
 
 
-                <div className='d-flex ' style={{gap:10,flexFlow:"row wrap", background: "rgb(250, 250, 252)", padding: 30 }}>
+                <div className='d-flex ' style={{gap:10,flexFlow:"row wrap", background: "#254B85", padding: 30 }}>
 
                     {[
                         {
