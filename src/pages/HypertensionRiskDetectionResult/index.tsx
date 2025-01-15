@@ -1,4 +1,4 @@
-import {AssessmentResult} from '@/Components/RiskAssessment/main';
+import AssessmentResult from '@/Components/RiskAssessment/main';
 import React from 'react'
 
 const Index:React.FC=()=>{
